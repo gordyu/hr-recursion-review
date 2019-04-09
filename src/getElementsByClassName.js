@@ -13,12 +13,10 @@ var getElementsByClassName = function(className, node
     if(nodes.className.includes(className)){
       arr.push(nodes);
     }
-
     for (var i = 0; i < nodes.children.length; i++){
       var output = getElementsByClassName(className, nodes.children[i]);
       arr = arr.concat(output);
     }
-
     return arr;
   };
 
