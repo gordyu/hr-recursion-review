@@ -42,7 +42,6 @@ var stringifyJSON = function(obj) {
     objStr = objStr.substring(0, objStr.length-1);
     objStr += '}';
     return objStr;
-       
   }
 };
 /*  
